@@ -48,3 +48,6 @@ for (let i = 0; i < 6; i++) {
   navlinks[i].textContent = navved[i];
 }
 
+let headerImg = document.getElementById('cta-img');
+headerImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
