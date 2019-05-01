@@ -60,3 +60,8 @@ headerTitle.textContent = siteContent["cta"]["h1"];
 // button text
 let headerButton = document.querySelector(".cta-text button");
 headerButton.textContent = siteContent["cta"]["button"];
+
+// h4
+const topContentHeadings = document.querySelectorAll(".top-content .text-content h4");
+topContentHeadings[0].textContent = siteContent["main-content"]["features-h4"];
+topContentHeadings[1].textContent = siteContent["main-content"]["about-h4"];
