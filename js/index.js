@@ -80,3 +80,9 @@ const botContentHeadings = document.querySelectorAll(".bottom-content .text-cont
 botContentHeadings[0].textContent = siteContent["main-content"]["services-h4"];
 botContentHeadings[1].textContent = siteContent["main-content"]["product-h4"];
 botContentHeadings[2].textContent = siteContent["main-content"]["vision-h4"];
+
+// bottom content
+const botContent = document.querySelectorAll(".bottom-content .text-content p");
+botContent[0].textContent = siteContent["main-content"]["services-content"];
+botContent[1].textContent = siteContent["main-content"]["product-content"];
+botContent[2].textContent = siteContent["main-content"]["vision-content"];
