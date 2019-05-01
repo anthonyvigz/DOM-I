@@ -61,7 +61,12 @@ headerTitle.textContent = siteContent["cta"]["h1"];
 let headerButton = document.querySelector(".cta-text button");
 headerButton.textContent = siteContent["cta"]["button"];
 
-// h4
+// h4 top
 const topContentHeadings = document.querySelectorAll(".top-content .text-content h4");
 topContentHeadings[0].textContent = siteContent["main-content"]["features-h4"];
 topContentHeadings[1].textContent = siteContent["main-content"]["about-h4"];
+
+// top content
+const topContent = document.querySelectorAll(".top-content .text-content p");
+topContent[0].textContent = siteContent["main-content"]["features-content"];
+topContent[1].textContent = siteContent["main-content"]["about-content"];
