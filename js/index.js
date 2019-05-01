@@ -42,6 +42,7 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // nav links
+const nav = document.querySelector('nav');
 const navlinks = document.querySelectorAll('nav a');
 let navved = Object.values(siteContent["nav"]);
 
@@ -51,6 +52,15 @@ for (let i = 0; i < 6; i++) {
 for (i = 0; i < navlinks.length; i++) {
   navlinks[i].style.color = "green";
 }
+
+const firstAppend = document.createElement('a');
+const secondAppend = document.createElement('a');
+
+firstAppend.textContent = "Last";
+secondAppend.textContent = "First"
+
+nav.appendChild(firstAppend);
+nav.prepend(secondAppend);
 
 // header img
 let headerImg = document.getElementById('cta-img');
