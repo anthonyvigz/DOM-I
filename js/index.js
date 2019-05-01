@@ -42,11 +42,14 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // nav links
-let navlinks = document.querySelectorAll('nav a');
+const navlinks = document.querySelectorAll('nav a');
 let navved = Object.values(siteContent["nav"]);
 
 for (let i = 0; i < 6; i++) {
   navlinks[i].textContent = navved[i];
+}
+for (i = 0; i < navlinks.length; i++) {
+  navlinks[i].style.color = "green";
 }
 
 // header img
