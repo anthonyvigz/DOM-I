@@ -86,3 +86,16 @@ const botContent = document.querySelectorAll(".bottom-content .text-content p");
 botContent[0].textContent = siteContent["main-content"]["services-content"];
 botContent[1].textContent = siteContent["main-content"]["product-content"];
 botContent[2].textContent = siteContent["main-content"]["vision-content"];
+
+// contact information
+const contactHeader = document.querySelector(".contact h4");
+contactHeader.textContent = siteContent["contact"]["contact-h4"];
+
+const contactInfo = document.querySelectorAll(".contact p");
+contactInfo[0].textContent = siteContent["contact"]["address"];
+contactInfo[1].textContent = siteContent["contact"]["phone"];
+contactInfo[2].textContent = siteContent["contact"]["email"];
+
+// footer
+const footer = document.querySelector("footer p");
+footer.textContent = siteContent["footer"]["copyright"];
