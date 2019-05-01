@@ -70,3 +70,7 @@ topContentHeadings[1].textContent = siteContent["main-content"]["about-h4"];
 const topContent = document.querySelectorAll(".top-content .text-content p");
 topContent[0].textContent = siteContent["main-content"]["features-content"];
 topContent[1].textContent = siteContent["main-content"]["about-content"];
+
+// content image
+const contentImg = document.getElementById('middle-img');
+contentImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
