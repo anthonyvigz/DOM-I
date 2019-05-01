@@ -41,6 +41,7 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+// nav links
 let navlinks = document.querySelectorAll('nav a');
 let navved = Object.values(siteContent["nav"]);
 
@@ -48,6 +49,14 @@ for (let i = 0; i < 6; i++) {
   navlinks[i].textContent = navved[i];
 }
 
+// header img
 let headerImg = document.getElementById('cta-img');
 headerImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
+// header title 
+let headerTitle = document.querySelector(".cta-text h1");
+headerTitle.textContent = siteContent["cta"]["h1"];
+
+// button text
+let headerButton = document.querySelector(".cta-text button");
+headerButton.textContent = siteContent["cta"]["button"];
