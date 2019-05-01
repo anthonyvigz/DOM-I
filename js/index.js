@@ -74,3 +74,9 @@ topContent[1].textContent = siteContent["main-content"]["about-content"];
 // content image
 const contentImg = document.getElementById('middle-img');
 contentImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+// h4 bottom
+const botContentHeadings = document.querySelectorAll(".bottom-content .text-content h4");
+botContentHeadings[0].textContent = siteContent["main-content"]["services-h4"];
+botContentHeadings[1].textContent = siteContent["main-content"]["product-h4"];
+botContentHeadings[2].textContent = siteContent["main-content"]["vision-h4"];
